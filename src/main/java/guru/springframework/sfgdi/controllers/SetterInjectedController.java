@@ -2,18 +2,21 @@ package guru.springframework.sfgdi.controllers;
 
 import guru.springframework.sfgdi.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class ConstructorInjectionController {
+public class SetterInjectedController {
 
-    private final GreetingService greetingService;
+    private GreetingService greetingService;
 
     /*
-        Na Constructor Injection o Autowired não é necessário
-        IMPORTANTE: Não se esqueça de colocar a anotação @Service no *GreetingServiceImpl* <- Impl
+        Na Setter Injection coloca-se o Autowired no setter.
+        A Injeção de Dependência ocorrerá aqui
      */
-    public ConstructorInjectionController(GreetingService greetingService) {
+    @Qualifier("setterInjectedGreetingService")
+    @Autowired
+    public void setGreetingService(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
