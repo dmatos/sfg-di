@@ -4,7 +4,13 @@ import guru.springframework.sfgdi.services.GreetingService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
+<<<<<<< HEAD
 //Internationalization controller name convention as it is 18 chars long
+=======
+/**
+ * Created by jt on 12/27/19.
+ */
+>>>>>>> dev
 @Controller
 public class I18nController {
 
@@ -15,6 +21,10 @@ public class I18nController {
     }
 
     public String sayHello(){
+<<<<<<< HEAD
        return greetingService.sayGreeting();
+=======
+        return greetingService.sayGreeting();
+>>>>>>> dev
     }
 }

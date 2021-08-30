@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 class ConstructorInjectedControllerTest {
 
+<<<<<<< HEAD
 
     //Way to go!!!
 
@@ -13,11 +14,23 @@ class ConstructorInjectedControllerTest {
 
     @BeforeEach
     void setUp(){
+=======
+    ConstructorInjectedController controller;
+
+    @BeforeEach
+    void setUp() {
+>>>>>>> dev
         controller = new ConstructorInjectedController(new ConstructorGreetingService());
     }
 
     @Test
     void getGreeting() {
+<<<<<<< HEAD
         System.out.println(controller.getGreeting());
+=======
+
+        System.out.println(controller.getGreeting());
+
+>>>>>>> dev
     }
 }

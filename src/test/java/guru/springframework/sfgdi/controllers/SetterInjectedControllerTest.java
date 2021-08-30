@@ -6,8 +6,11 @@ import org.junit.jupiter.api.Test;
 
 class SetterInjectedControllerTest {
 
+<<<<<<< HEAD
     //Avoid going this way...
 
+=======
+>>>>>>> dev
     SetterInjectedController controller;
 
     @BeforeEach
@@ -19,5 +22,9 @@ class SetterInjectedControllerTest {
     @Test
     void getGreeting() {
         System.out.println(controller.getGreeting());
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
     }
 }
